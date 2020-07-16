@@ -1,0 +1,26 @@
+# contents of properties file
+[locator]
+logon.emailTF = new UiSelector().text("email").className("android.widget.EditText")
+logon.passwordTF = new UiSelector().text("password").className("android.widget.EditText")
+logon.signinBT = new UiSelector().text("Sign In").className("android.widget.TextView")
+
+sticky.text  = new UiSelector().text("*Convert handwritten*").className("android.widget.TextView")
+sticky.tryNow = new UiSelector().text("Try now").className("android.widget.TextView")
+sticky.notNow = new UiSelector().className("android.widget.ImageView")
+
+allBoards.text = new UiSelector().text("All boards").className("android.widget.TextView")
+allBoards.newBoard = new UiSelector().text("New board").className("android.widget.TextView")
+allBoards.footerBoards = new UiSelector().text("BOARDS").className("android.widget.TextView")
+allBoards.footerFeed = new UiSelector().text("FEED").className("android.widget.TextView")
+
+boardFloormap.home = new UiSelector().index(1).className("android.view.ViewGroup")
+boardFloormap.document = new UiSelector().index(2).className("android.view.ViewGroup")
+boardFloormap.plus = new UiSelector().index(3).className("android.view.ViewGroup")
+
+[auth]
+basic.username=balazs.galambos@gmail.com
+basic.password=KB$$$c
+
+[timeout]
+appium.implicit=30000
+appium.launch=5000
