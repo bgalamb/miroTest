@@ -30,6 +30,13 @@ Each screen has its own class. Each class has a
 
 + __Methods__ <br>
    to interact with the fields by calling them from your proram.
+   
+To test certain paths in your app create classes which have 
++ pre test steps - which take you to the part which you want to test eg. login
++ test steps - perform the actual steps
++ post step steps - validation and cleanup steps
+
+Consider doing these classes abstract. If so you can create exhaustive tests without too much coding by extending the original test class and overriding the test steps. Eg, authentication through Basic,SAML, OAUth etc...
     
 ### Testing
 
@@ -41,9 +48,4 @@ Create a new node.js run configuration for the javascript file index.js
 Open Webstorm and right click on package.json. Select ___npm install___ to install the dependencies.
 
 
-To test certain paths in your app create classes which have 
-+ pre test steps - which take you to the part which you want to test eg. login
-+ test steps - perform the actual steps
-+ post step steps - validation and cleanup steps
 
-Consider doing these classes abstract. If so you can create exhaustive tests without too much coding by extending the original test class and overriding the test steps. Eg, authentication through Basic,SAML, OAUth etc...
